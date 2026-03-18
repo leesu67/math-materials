@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學習教材下載 | 數學教材中心</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Microsoft JhengHei', '微軟正黑體', Arial, sans-serif;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: white; font-size: 2em; margin-bottom: 10px; }
+        .subtitle { color: rgba(255,255,255,0.9); }
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+        }
+        .back-link:hover { background: rgba(255,255,255,0.3); }
+        .file-grid { display: grid; gap: 15px; }
+        .file-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: #333;
+        }
+        .file-card:hover { transform: translateX(5px); }
+        .file-icon { font-size: 2.5em; }
+        .file-name { font-weight: bold; flex: 1; }
+        .file-download {
+            background: #11998e;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: rgba(255,255,255,0.6);
+        }
+        .empty-state {
+            text-align: center;
+            color: white;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 學習教材區</h1>
+            <p class="subtitle">點擊即可下載</p>
+        </header>
+        <a href="../" class="back-link">← 返回年級選單</a>
+        <div class="file-grid">
+            <!-- 將您的學習檔案加入這裡 -->
+            <!-- 
+            <a href="您的檔案名稱.pdf" class="file-card" download>
+                <div class="file-icon">📚</div>
+                <div class="file-name">您的檔案名稱.pdf</div>
+                <span class="file-download">⬇️ 下載</span>
+            </a>
+            -->
+        </div>
+        <div class="empty-state">
+            <p>📚 請將學習教材上傳至此資料夾</p>
+        </div>
+        <footer>
+            <p>數學教材中心</p>
+        </footer>
+    </div>
+</body>
+</html>
