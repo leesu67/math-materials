@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數學教材中心 | 高中數學教材下載</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Microsoft JhengHei', '微軟正黑體', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.2em;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            color: #00d4ff;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0,212,255,0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .grade-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .grade-card {
+            background: linear-gradient(145deg, #1e3a5f 0%, #0f2540 100%);
+            border-radius: 15px;
+            padding: 25px;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .grade-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .grade-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #00d4ff;
+        }
+        .semester-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .semester-link {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            padding: 10px 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .semester-link:hover {
+            background: rgba(0,212,255,0.2);
+        }
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .exam-card {
+            background: linear-gradient(145deg, #2d1f4e 0%, #1a1235 100%);
+            border-radius: 15px;
+            padding: 25px;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .exam-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .exam-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        .exam-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .exam-desc {
+            font-size: 0.9em;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 15px;
+        }
+        .sub-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .sub-link {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 5px 12px;
+            background: rgba(255,215,0,0.15);
+            border-radius: 15px;
+        }
+        .sub-link:hover {
+            background: rgba(255,215,0,0.3);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: rgba(255,255,255,0.5);
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .grade-grid,
+            .exam-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 數學教材中心</h1>
+            <p class="subtitle">高中數學教材下載 | 學測、分科考試歷屆試題</p>
+        </header>
+
+        <!-- 年級教材區 -->
+        <div class="section">
+            <h2 class="section-title">📖 年級教材</h2>
+            <div class="grade-grid">
+                <!-- 高一 -->
+                <a href="./materials/高一/" class="grade-card">
+                    <div class="grade-name">高一</div>
+                    <div class="semester-links">
+                        <span class="semester-link">📅 上學期</span>
+                        <span class="semester-link">📅 下學期</span>
+                    </div>
+                </a>
+
+                <!-- 高二 -->
+                <a href="./materials/高二/" class="grade-card">
+                    <div class="grade-name">高二</div>
+                    <div class="semester-links">
+                        <span class="semester-link">📅 上學期</span>
+                        <span class="semester-link">📅 下學期</span>
+                    </div>
+                </a>
+
+                <!-- 高三 -->
+                <a href="./materials/高三/" class="grade-card">
+                    <div class="grade-name">高三</div>
+                    <div class="semester-links">
+                        <span class="semester-link">📅 上學期</span>
+                        <span class="semester-link">📅 下學期</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 學測區 -->
+        <div class="section">
+            <h2 class="section-title">🎯 學測專區</h2>
+            <div class="exam-grid">
+                <a href="./materials/學測模擬試題/" class="exam-card">
+                    <div class="exam-icon">📝</div>
+                    <div class="exam-name">學測模擬試題</div>
+                    <div class="exam-desc">模擬學測歷屆試題，包含分冊與全冊版本</div>
+                    <div class="sub-links">
+                        <span class="sub-link">📖 分冊</span>
+                        <span class="sub-link">📚 全冊</span>
+                    </div>
+                </a>
+
+                <a href="./materials/學測試題/" class="exam-card">
+                    <div class="exam-icon">📋</div>
+                    <div class="exam-name">學測試題</div>
+                    <div class="exam-desc">歷年學測考試試題</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 分科區 -->
+        <div class="section">
+            <h2 class="section-title">🔥 分科專區</h2>
+            <div class="exam-grid">
+                <a href="./materials/分科模擬試題/" class="exam-card">
+                    <div class="exam-icon">📊</div>
+                    <div class="exam-name">分科模擬試題</div>
+                    <div class="exam-desc">模擬分科考試歷屆試題，包含分冊與全冊版本</div>
+                    <div class="sub-links">
+                        <span class="sub-link">📖 分冊</span>
+                        <span class="sub-link">📚 全冊</span>
+                    </div>
+                </a>
+
+                <a href="./materials/分科試題/" class="exam-card">
+                    <div class="exam-icon">📑</div>
+                    <div class="exam-name">分科試題</div>
+                    <div class="exam-desc">歷年分科考試試題</div>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 數學教材中心</p>
+            <p>如有問題請聯繫管理員</p>
+        </footer>
+    </div>
+</body>
+</html>
